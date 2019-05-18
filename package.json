@@ -1,6 +1,7 @@
 {
   "name": "angular-multi-platform-starter",
   "version": "1.0.0",
+  "main": "electron/dist/main.js",
   "author": {
     "name": "Sébastien CORNUEL",
     "email": "sbastien.cornuel@gmail.com"
@@ -12,7 +13,11 @@
     "build:prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "electron": "npm run build:prod && tsc --p electron && electron .",
+    "electron:windows": "electron-packager . --overwrite --platform=win32 --prune=true --out=./electron/release",
+    "electron:linux": "electron-packager . --overwrite --platform=linux --prune=true --out=./electron/release",
+    "electron:mac": "electron-packager . --overwrite --platform=darwin --prune=true --out=./electron/release"
   },
   "private": true,
   "dependencies": {
@@ -33,11 +38,14 @@
     "@angular-devkit/build-angular": "~0.13.0",
     "@angular/cli": "~7.3.1",
     "@angular/compiler-cli": "~7.2.0",
-    "@angular/language-service": "~7.2.0",
+    "@angular/language-service": "~7.2.0",    
+    "@types/electron": "^1.6.10",
     "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
-    "codelyzer": "~4.5.0",
+    "codelyzer": "~4.5.0",    
+    "electron": "^5.0.1",
+    "electron-packager": "^13.1.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.1.1",
