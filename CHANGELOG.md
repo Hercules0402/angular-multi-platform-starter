@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [1.1.0] - 2019-05-18
+### Added
+- Electron 5 support
+
+### Changed
+- Update dependencies.
+- Updte package.json (Add field main and commands like npm run electron).
+- Update .gitignore.
+
 ## [1.0.0] - 2019-05-18
 ### Added
 - Angular 7 support
