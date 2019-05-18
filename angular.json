@@ -136,5 +136,8 @@
       }
     }
   },
-  "defaultProject": "angular-multi-platform-starter"
+  "defaultProject": "angular-multi-platform-starter",
+  "cli": {
+    "defaultCollection": "@nativescript/schematics"
+  }
 }

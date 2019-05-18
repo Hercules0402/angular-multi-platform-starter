@@ -7,6 +7,10 @@
     "email": "sbastien.cornuel@gmail.com"
   },
   "scripts": {
+    "android": "tns run android --bundle",
+    "ios": "tns run ios --bundle",
+    "mobile": "tns run --bundle",
+    "preview": "tns preview --bundle",
     "ng": "ng",
     "start": "ng serve --open",
     "build:local": "ng build",
@@ -21,6 +25,10 @@
   },
   "private": true,
   "dependencies": {
+    "nativescript-angular": "~7.2.0",
+    "nativescript-theme-core": "~1.0.4",
+    "reflect-metadata": "~0.1.12",
+    "tns-core-modules": "~5.2.0",
     "@angular/animations": "~7.2.0",
     "@angular/common": "~7.2.0",
     "@angular/compiler": "~7.2.0",
@@ -29,21 +37,24 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "@nativescript/schematics": "^0.6.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
+    "nativescript-dev-webpack": "^0.20.0",
+    "@nativescript/schematics": "~0.4.0",
     "@angular-devkit/build-angular": "~0.13.0",
     "@angular/cli": "~7.3.1",
     "@angular/compiler-cli": "~7.2.0",
-    "@angular/language-service": "~7.2.0",    
+    "@angular/language-service": "~7.2.0",
     "@types/electron": "^1.6.10",
     "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
-    "codelyzer": "~4.5.0",    
+    "codelyzer": "~4.5.0",
     "electron": "^5.0.1",
     "electron-packager": "^13.1.1",
     "jasmine-core": "~2.99.1",
@@ -57,5 +68,8 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
+  },
+  "nativescript": {
+    "id": "org.nativescript.ngsample"
   }
 }
