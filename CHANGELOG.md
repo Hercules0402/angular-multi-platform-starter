@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2019-05-18
+### Added
+- NativeScript 5 support
+
+### Changed
+- Update dependencies.
+- Update package.json (Add commands like npm run android).
+- Update .gitignore.
 
 ## [1.1.0] - 2019-05-18
 ### Added
@@ -13,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Update dependencies.
-- Updte package.json (Add field main and commands like npm run electron).
+- Update package.json (Add field main and commands like npm run electron).
 - Update .gitignore.
 
 ## [1.0.0] - 2019-05-18
